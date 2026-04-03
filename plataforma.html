@@ -18,17 +18,14 @@
         </nav>
     </header>
     <main>
-        <h2>Arquitetura da Plataforma</h2>
-        <p>A inteligência de dados do nosso projeto é baseada no protocolo <strong>MQTT</strong>, permitindo uma comunicação leve e ultra-rápida entre o alimentador e o dono.</p>
+        <h2>A Plataforma de Dados</h2>
+        <p>Para que o sistema funcione globalmente, utilizamos uma arquitetura de nuvem moderna baseada no protocolo MQTT.</p>
         <ul>
-            <li><strong>Broker Cloud:</strong> EMQX Cloud (Cluster seguro via porta 8883)</li>
-            <li><strong>Protocolo:</strong> MQTT com TLS (Criptografia de dados)</li>
-            <li><strong>Armazenamento:</strong> Banco de Dados MySQL local para histórico persistente.</li>
+            <li><strong>Broker Cloud:</strong> Utilizamos o servidor EMQX Cloud para receber e distribuir as mensagens de status do alimentador.</li>
+            <li><strong>Segurança:</strong> A conexão é protegida via TLS, garantindo que as informações do sensor e comandos do motor viajem com segurança.</li>
+            <li><strong>Banco de Dados:</strong> Todas as informações recebidas são registradas em um banco MySQL, criando um histórico completo de quando o pet foi alimentado.</li>
         </ul>
-        <div class="img-box">
-            <p><em>[Print do Banco de Dados será exibido aqui]</em></p>
-        </div>
     </main>
-    <footer>Projeto Integrador 6 - 2026</footer>
+    <footer>© 2026</footer>
 </body>
 </html>
