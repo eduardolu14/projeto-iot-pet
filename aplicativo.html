@@ -18,20 +18,16 @@
         </nav>
     </header>
     <main>
-        <h2>Sistema de Monitoramento</h2>
-        <p>O "cérebro" digital do projeto roda em um ambiente Python no VS Code, atuando como o elo entre a nuvem e o armazenamento local.</p>
-        
-        <div class="img-box">
-            <p><em>[Print do Console Python]</em></p>
-        </div>
-
-        <p>O aplicativo realiza as seguintes funções:</p>
+        <h2>Monitoramento e Inteligência</h2>
+        <p>O sistema de monitoramento roda em Python e é responsável por traduzir os dados crus do sensor em informações úteis para o usuário.</p>
+        <p>O aplicativo monitora o fluxo de dados e dispara alertas visuais imediatos conforme o nível de ração detectado:</p>
         <ul>
-            <li><strong>Processamento:</strong> Lê os arquivos JSON vindos do broker.</li>
-            <li><strong>Interface:</strong> Exibe alertas de "CHEIO", "ACABANDO" ou "VAZIO" no terminal.</li>
-            <li><strong>Registro:</strong> Grava automaticamente cada ação (Porta Aberta/Fechada) no Banco de Dados MySQL para consulta futura.</li>
+            <li><strong>🟢 CHEIO:</strong> Indica que o reservatório está em sua capacidade ideal.</li>
+            <li><strong>🟡 ACABANDO:</strong> Um aviso preventivo de que a ração está chegando ao fim.</li>
+            <li><strong>🔴 VAZIO:</strong> Alerta urgente informando a necessidade de reposição imediata.</li>
         </ul>
+        <p>Além disso, o sistema registra automaticamente no banco de dados o estado da porta (Aberta ou Fechada), permitindo uma auditoria completa da rotina alimentar do animal.</p>
     </main>
-    <footer>Projeto Integrador 6 - 2026</footer>
+    <footer>© 2026</footer>
 </body>
 </html>
