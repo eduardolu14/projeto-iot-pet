@@ -2,70 +2,29 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Alimentador Pet</title>
+    <title>Alimentador IoT - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <div class="logo-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" alt="Logo" width="50">
-            <h1>PROJETO ALIMENTADOR PET</h1>
-        </div>
+        <h1>PROJETO ALIMENTADOR PET</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#plataforma">Plataforma</a></li>
-                <li><a href="#dispositivo">Dispositivo</a></li>
-                <li><a href="#aplicativo">Aplicativo</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plataforma.html">Plataforma</a></li>
+                <li><a href="dispositivo.html">Dispositivo</a></li>
+                <li><a href="aplicativo.html">Aplicativo</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="home">
-            <div class="content">
-                <h2>Bem-vindo ao Monitoramento Pet</h2>
-                <p>Este projeto utiliza tecnologia IoT para garantir que seu pet nunca fique sem comida. Através de um ESP32 e sensores, monitoramos o nível de ração e controlamos a abertura do reservatório em tempo real.</p>
-                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=500" alt="Pet Feliz" class="hero-img">
-            </div>
-        </section>
-
-        <section id="plataforma">
-            <div class="content">
-                <h2>Nossa Plataforma</h2>
-                <p>A inteligência do sistema reside na integração entre hardware e nuvem:</p>
-                <ul>
-                    <li><strong>Broker:</strong> EMQX Cloud utilizando protocolo MQTT.</li>
-                    <li><strong>Backend:</strong> Script Python com criptografia TLS.</li>
-                    <li><strong>Banco de Dados:</strong> MySQL para armazenamento de histórico de alimentação.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="dispositivo">
-            <div class="content">
-                <h2>O Dispositivo (Hardware)</h2>
-                <p>O "cérebro" do alimentador é um ESP32 DevKit V1. Ele controla um Servo Motor SG90:</p>
-                <ul>
-                    <li><strong>Ângulo 0º:</strong> Porta Fechada (Estado de espera).</li>
-                    <li><strong>Ângulo 90º:</strong> Porta Aberta (Liberando ração).</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="aplicativo">
-            <div class="content">
-                <h2>Monitoramento e Controle</h2>
-                <p>As mensagens recebidas no tópico <code>aula/iot</code> são processadas e exibidas no terminal. O sistema gera alertas visuais de "CHEIO", "ACABANDO" ou "VAZIO" e registra cada movimento da porta no banco de dados.</p>
-            </div>
-        </section>
+        <h2>Nossa História</h2>
+        <p>Tudo começou com a preocupação de manter nossos pets bem alimentados e saudáveis, mesmo em dias de rotina agitada. Na <strong>Faculdade Nova Roma</strong>, decidimos transformar essa necessidade em um projeto tecnológico real.</p>
+        <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?q=80&w=600" alt="Alimentação Pet">
+        </div>
+        <p>Este alimentador não é apenas um motor girando; é um ecossistema completo. Ele conecta hardware, nuvem e banco de dados para garantir que cada grão de ração seja registrado e cada movimento da porta seja monitorado de qualquer lugar do mundo.</p>
     </main>
-
-    <footer>
-        <p>Faculdade Nova Roma - Projeto Integrador 6 - 2026</p>
-    </footer>
-
+    <footer>Projeto Integrador 6 - 2026</footer>
 </body>
 </html>
