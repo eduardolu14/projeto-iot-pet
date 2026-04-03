@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alimentador IoT - Aplicativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PROJETO ALIMENTADOR PET</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plataforma.html">Plataforma</a></li>
+                <li><a href="dispositivo.html">Dispositivo</a></li>
+                <li><a href="aplicativo.html">Aplicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Sistema de Monitoramento</h2>
+        <p>O "cérebro" digital do projeto roda em um ambiente Python no VS Code, atuando como o elo entre a nuvem e o armazenamento local.</p>
+        
+        <div class="img-box">
+            <p><em>[Print do Console Python]</em></p>
+        </div>
+
+        <p>O aplicativo realiza as seguintes funções:</p>
+        <ul>
+            <li><strong>Processamento:</strong> Lê os arquivos JSON vindos do broker.</li>
+            <li><strong>Interface:</strong> Exibe alertas de "CHEIO", "ACABANDO" ou "VAZIO" no terminal.</li>
+            <li><strong>Registro:</strong> Grava automaticamente cada ação (Porta Aberta/Fechada) no Banco de Dados MySQL para consulta futura.</li>
+        </ul>
+    </main>
+    <footer>Projeto Integrador 6 - 2026</footer>
+</body>
+</html>
