@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>PROJETO ALIMENTADOR PET</h1>
+        <div class="logo-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" alt="Logo" width="50">
+            <h1>PROJETO ALIMENTADOR PET</h1>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,31 +25,47 @@
 
     <main>
         <section id="home">
-            <h2>Home</h2>
-            <p>Sistema inteligente de alimentação pet utilizando ESP32 e monitoramento em tempo real.</p>
+            <div class="content">
+                <h2>Bem-vindo ao Monitoramento Pet</h2>
+                <p>Este projeto utiliza tecnologia IoT para garantir que seu pet nunca fique sem comida. Através de um ESP32 e sensores, monitoramos o nível de ração e controlamos a abertura do reservatório em tempo real.</p>
+                <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=500" alt="Pet Feliz" class="hero-img">
+            </div>
         </section>
 
         <section id="plataforma">
-            <h2>Plataforma</h2>
-            <p><strong>Broker:</strong> EMQX Cloud (MQTT)</p>
-            <p><strong>Banco de Dados:</strong> MySQL (Local via Python)</p>
-            <p><strong>Arquitetura:</strong> ESP32 → MQTT (EMQX) → Python → MySQL</p>
+            <div class="content">
+                <h2>Nossa Plataforma</h2>
+                <p>A inteligência do sistema reside na integração entre hardware e nuvem:</p>
+                <ul>
+                    <li><strong>Broker:</strong> EMQX Cloud utilizando protocolo MQTT.</li>
+                    <li><strong>Backend:</strong> Script Python com criptografia TLS.</li>
+                    <li><strong>Banco de Dados:</strong> MySQL para armazenamento de histórico de alimentação.</li>
+                </ul>
+            </div>
         </section>
 
         <section id="dispositivo">
-            <h2>Dispositivo</h2>
-            <p>Hardware utilizado: ESP32 DevKit V1, Servo Motor SG90 e Protoboard.</p>
-            <p>O dispositivo controla a abertura da porta (0º a 90º) conforme o nível de ração.</p>
+            <div class="content">
+                <h2>O Dispositivo (Hardware)</h2>
+                <p>O "cérebro" do alimentador é um ESP32 DevKit V1. Ele controla um Servo Motor SG90:</p>
+                <ul>
+                    <li><strong>Ângulo 0º:</strong> Porta Fechada (Estado de espera).</li>
+                    <li><strong>Ângulo 90º:</strong> Porta Aberta (Liberando ração).</li>
+                </ul>
+            </div>
         </section>
 
         <section id="aplicativo">
-            <h2>Aplicativo</h2>
-            <p>Script Python no VS Code que processa os dados da nuvem e registra o status "Porta Aberta" ou "Porta Fechada" no banco de dados.</p>
+            <div class="content">
+                <h2>Monitoramento e Controle</h2>
+                <p>As mensagens recebidas no tópico <code>aula/iot</code> são processadas e exibidas no terminal. O sistema gera alertas visuais de "CHEIO", "ACABANDO" ou "VAZIO" e registra cada movimento da porta no banco de dados.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 - Faculdade Nova Roma - Projeto Integrador 6</p>
+        <p>Faculdade Nova Roma - Projeto Integrador 6 - 2026</p>
     </footer>
+
 </body>
 </html>
