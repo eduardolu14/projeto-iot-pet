@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto IoT - Alimentador Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PROJETO ALIMENTADOR PET</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#plataforma">Plataforma</a></li>
+                <li><a href="#dispositivo">Dispositivo</a></li>
+                <li><a href="#aplicativo">Aplicativo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Sistema inteligente de alimentação pet utilizando ESP32 e monitoramento em tempo real.</p>
+        </section>
+
+        <section id="plataforma">
+            <h2>Plataforma</h2>
+            <p><strong>Broker:</strong> EMQX Cloud (MQTT)</p>
+            <p><strong>Banco de Dados:</strong> MySQL (Local via Python)</p>
+            <p><strong>Arquitetura:</strong> ESP32 → MQTT (EMQX) → Python → MySQL</p>
+        </section>
+
+        <section id="dispositivo">
+            <h2>Dispositivo</h2>
+            <p>Hardware utilizado: ESP32 DevKit V1, Servo Motor SG90 e Protoboard.</p>
+            <p>O dispositivo controla a abertura da porta (0º a 90º) conforme o nível de ração.</p>
+        </section>
+
+        <section id="aplicativo">
+            <h2>Aplicativo</h2>
+            <p>Script Python no VS Code que processa os dados da nuvem e registra o status "Porta Aberta" ou "Porta Fechada" no banco de dados.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Faculdade Nova Roma - Projeto Integrador 6</p>
+    </footer>
+</body>
+</html>
